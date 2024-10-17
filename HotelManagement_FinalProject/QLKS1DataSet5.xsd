@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLKS1DataSet5" targetNamespace="http://tempuri.org/QLKS1DataSet5.xsd" xmlns:mstns="http://tempuri.org/QLKS1DataSet5.xsd" xmlns="http://tempuri.org/QLKS1DataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLKS1ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLKS1ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HotelManagement_FinalProject.Properties.Settings.GlobalReference.Default.QLKS1ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CALAMTableAdapter" GeneratorDataComponentClassName="CALAMTableAdapter" Name="CALAM" UserDataComponentName="CALAMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLKS1ConnectionString1 (Settings)" DbObjectName="QLKS1.dbo.CALAM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Ngay, GioVao, GioRa, SoGioBu, SoGioNghi, CheckinBu, CheckoutBu, CheckinNghi, CheckoutNghi, Ca, LuongTrongNgay FROM dbo.CALAM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Ngay" DataSetColumn="Ngay" />
+              <Mapping SourceColumn="GioVao" DataSetColumn="GioVao" />
+              <Mapping SourceColumn="GioRa" DataSetColumn="GioRa" />
+              <Mapping SourceColumn="SoGioBu" DataSetColumn="SoGioBu" />
+              <Mapping SourceColumn="SoGioNghi" DataSetColumn="SoGioNghi" />
+              <Mapping SourceColumn="CheckinBu" DataSetColumn="CheckinBu" />
+              <Mapping SourceColumn="CheckoutBu" DataSetColumn="CheckoutBu" />
+              <Mapping SourceColumn="CheckinNghi" DataSetColumn="CheckinNghi" />
+              <Mapping SourceColumn="CheckoutNghi" DataSetColumn="CheckoutNghi" />
+              <Mapping SourceColumn="Ca" DataSetColumn="Ca" />
+              <Mapping SourceColumn="LuongTrongNgay" DataSetColumn="LuongTrongNgay" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLKS1DataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLKS1DataSet5" msprop:Generator_DataSetName="QLKS1DataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CALAM" msprop:Generator_RowEvHandlerName="CALAMRowChangeEventHandler" msprop:Generator_RowDeletedName="CALAMRowDeleted" msprop:Generator_RowDeletingName="CALAMRowDeleting" msprop:Generator_RowEvArgName="CALAMRowChangeEvent" msprop:Generator_TablePropName="CALAM" msprop:Generator_RowChangedName="CALAMRowChanged" msprop:Generator_RowChangingName="CALAMRowChanging" msprop:Generator_TableClassName="CALAMDataTable" msprop:Generator_RowClassName="CALAMRow" msprop:Generator_TableVarName="tableCALAM" msprop:Generator_UserTableName="CALAM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ngay" msprop:Generator_ColumnPropNameInRow="Ngay" msprop:Generator_ColumnPropNameInTable="NgayColumn" msprop:Generator_ColumnVarNameInTable="columnNgay" msprop:Generator_UserColumnName="Ngay" type="xs:dateTime" />
+              <xs:element name="GioVao" msprop:Generator_ColumnPropNameInRow="GioVao" msprop:Generator_ColumnPropNameInTable="GioVaoColumn" msprop:Generator_ColumnVarNameInTable="columnGioVao" msprop:Generator_UserColumnName="GioVao" type="xs:duration" />
+              <xs:element name="GioRa" msprop:Generator_ColumnPropNameInRow="GioRa" msprop:Generator_ColumnPropNameInTable="GioRaColumn" msprop:Generator_ColumnVarNameInTable="columnGioRa" msprop:Generator_UserColumnName="GioRa" type="xs:duration" />
+              <xs:element name="SoGioBu" msprop:Generator_ColumnPropNameInRow="SoGioBu" msprop:Generator_ColumnPropNameInTable="SoGioBuColumn" msprop:Generator_ColumnVarNameInTable="columnSoGioBu" msprop:Generator_UserColumnName="SoGioBu" type="xs:duration" minOccurs="0" />
+              <xs:element name="SoGioNghi" msprop:Generator_ColumnPropNameInRow="SoGioNghi" msprop:Generator_ColumnPropNameInTable="SoGioNghiColumn" msprop:Generator_ColumnVarNameInTable="columnSoGioNghi" msprop:Generator_UserColumnName="SoGioNghi" type="xs:duration" minOccurs="0" />
+              <xs:element name="CheckinBu" msprop:Generator_ColumnPropNameInRow="CheckinBu" msprop:Generator_ColumnPropNameInTable="CheckinBuColumn" msprop:Generator_ColumnVarNameInTable="columnCheckinBu" msprop:Generator_UserColumnName="CheckinBu" type="xs:duration" minOccurs="0" />
+              <xs:element name="CheckoutBu" msprop:Generator_ColumnPropNameInRow="CheckoutBu" msprop:Generator_ColumnPropNameInTable="CheckoutBuColumn" msprop:Generator_ColumnVarNameInTable="columnCheckoutBu" msprop:Generator_UserColumnName="CheckoutBu" type="xs:duration" minOccurs="0" />
+              <xs:element name="CheckinNghi" msprop:Generator_ColumnPropNameInRow="CheckinNghi" msprop:Generator_ColumnPropNameInTable="CheckinNghiColumn" msprop:Generator_ColumnVarNameInTable="columnCheckinNghi" msprop:Generator_UserColumnName="CheckinNghi" type="xs:duration" minOccurs="0" />
+              <xs:element name="CheckoutNghi" msprop:Generator_ColumnPropNameInRow="CheckoutNghi" msprop:Generator_ColumnPropNameInTable="CheckoutNghiColumn" msprop:Generator_ColumnVarNameInTable="columnCheckoutNghi" msprop:Generator_UserColumnName="CheckoutNghi" type="xs:duration" minOccurs="0" />
+              <xs:element name="Ca" msprop:Generator_ColumnPropNameInRow="Ca" msprop:Generator_ColumnPropNameInTable="CaColumn" msprop:Generator_ColumnVarNameInTable="columnCa" msprop:Generator_UserColumnName="Ca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LuongTrongNgay" msprop:Generator_ColumnPropNameInRow="LuongTrongNgay" msprop:Generator_ColumnPropNameInTable="LuongTrongNgayColumn" msprop:Generator_ColumnVarNameInTable="columnLuongTrongNgay" msprop:Generator_UserColumnName="LuongTrongNgay" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
